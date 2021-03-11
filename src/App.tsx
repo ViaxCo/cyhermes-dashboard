@@ -1,7 +1,6 @@
 import { Box, Flex } from "@chakra-ui/layout";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Header, Sidebar, Pricing, Slider } from "./components";
-import Modules from "./components/Modules";
 
 const App = () => {
   return (
@@ -13,7 +12,6 @@ const App = () => {
             <Header />
             <Pricing />
             <Slider />
-            <Modules />
           </Box>
         </Flex>
       </Flex>
