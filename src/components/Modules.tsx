@@ -1,10 +1,9 @@
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import Module from "./Module";
-import { SiGlassdoor } from "react-icons/si";
+import { SiGlassdoor, SiMicrosoftonenote } from "react-icons/si";
 import { BsBuilding, BsFillPeopleFill } from "react-icons/bs";
 import { FaFileContract, FaChartPie } from "react-icons/fa";
 import { RiPlantFill } from "react-icons/ri";
-import { GrDocumentTime } from "react-icons/gr";
 import { BiBarChartAlt } from "react-icons/bi";
 
 const Modules = () => {
@@ -31,7 +30,7 @@ const Modules = () => {
     },
     {
       text: "Minute Book",
-      icon: GrDocumentTime,
+      icon: SiMicrosoftonenote,
     },
     {
       text: "Reporting Tool",
