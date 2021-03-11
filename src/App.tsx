@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box, Flex } from "@chakra-ui/layout";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Header, Sidebar, Pricing, Slider } from "./components";
+import Modules from "./components/Modules";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Flex minH="100vh">
+        <Sidebar />
+        <Flex ml="30vw" w="70vw" pt="12" pb="10" pl="36" pr="60">
+          <Box flex="1">
+            <Header />
+            <Pricing />
+            <Slider />
+            <Modules />
+          </Box>
+        </Flex>
+      </Flex>
+    </Router>
   );
-}
+};
 
 export default App;
